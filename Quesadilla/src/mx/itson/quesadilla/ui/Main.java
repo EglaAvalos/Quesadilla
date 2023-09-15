@@ -25,29 +25,29 @@ public class Main {
             telefonos = telefonos.replace("622", "Guaymas");
             String[] lineas = telefonos.split(",");
 
-            // cuenta las ciudades
-            int tijuanaCount = 0;
-            int hermosilloCount = 0;
-            int guaymasCount = 0;
-            int desconocidoCount = 0;
+            // cuenta las ciudades por telefono
+            int tijuanaContador = 0;
+            int hermosilloContador = 0;
+            int guaymasContador = 0;
+            int desconocidoContador = 0;
 
-            // Busca nombres de ciudades en el contenido
+            // Se aplica el contador
             for (String linea : lineas) {
                 if (linea.contains("Tijuana")) {
-                    tijuanaCount++;
+                    tijuanaContador++;
                 } else if (linea.contains("Hermosillo")) {
-                    hermosilloCount++;
+                    hermosilloContador++;
                 } else if (linea.contains("Guaymas")) {
-                    guaymasCount++;
+                    guaymasContador++;
                 } else {
-                    desconocidoCount++;
+                    desconocidoContador++;
                 }
             }
 
-            System.out.println("Hay " + tijuanaCount + " números de Tijuana");
-            System.out.println("Hay " + hermosilloCount + " números de Hermosillo");
-            System.out.println("Hay " + guaymasCount + " números de Guaymas");
-            System.out.println("Hay " + desconocidoCount + " números con código de área desconocido");
+            System.out.println("Hay " + tijuanaContador + " números de Tijuana");
+            System.out.println("Hay " + hermosilloContador + " números de Hermosillo");
+            System.out.println("Hay " + guaymasContador + " números de Guaymas");
+            System.out.println("Hay " + desconocidoContador + " números con código de área desconocido");
         }
     }
 
