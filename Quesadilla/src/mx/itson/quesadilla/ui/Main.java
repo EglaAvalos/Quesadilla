@@ -18,7 +18,7 @@ public class Main {
         Scanner scanner = new Scanner (System.in);
         String telefonos = scanner.nextLine();
         
-
+//if contar
         if (telefonos != null) {
             telefonos = telefonos.replace("664", "Tijuana");
             telefonos = telefonos.replace("662", "Hermosillo");
